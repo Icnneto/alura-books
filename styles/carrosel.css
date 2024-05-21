@@ -1,0 +1,148 @@
+.carrosel__titulo {
+    color: var(--cor-laranja);
+    background-color: var(--cor-branco);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.125rem;
+    padding: 1em 0 0.5em 0;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.5em 0;
+}
+
+.card {
+    background: var(--cor-branco);
+    box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    border-radius: 0.625rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.card__descrição {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.descrição__título {
+    color: var(--cor-laranja);
+    font-weight: 700;
+}
+
+.descrição__título-livro {
+    color: var(--cor-azul);
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 0.8755rem 0;
+}
+
+.descrição__texto {
+    font-size: 0.875rem;
+}
+
+.card__botões {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.botões {
+    display: flex;
+}
+
+.botões__item {
+    margin: 0 0.5rem;
+}
+
+.botões__ancora {
+    text-decoration: none;
+    font-weight: 700;
+    background-color: var(--cor-laranja);
+    color: var(--cor-branco);
+    padding: 1rem 2.2rem;
+}
+
+
+.descrição__estrelinhas {
+    margin-bottom: 1rem;
+}
+
+.carrosel__transparente {
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .carrosel__titulo {
+        font-size: 1.625rem;
+        padding: 2em 0 1em 0;
+    }
+
+    .swiper {
+        width: 60%;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        display: block;
+        top: 60%;
+    }
+    
+    .swiper-pagination {
+        position: initial;
+        margin: 2em 0;
+    }
+
+    .card {
+        width: 40%;
+        margin: 3rem auto;
+    }
+
+
+
+}
+
+@media screen and (min-width: 1300px) {
+
+  
+   .carrosel__container {
+        display: flex;
+        margin: 0 15vw 3em 15vw;
+        align-items:flex-start;
+   }
+
+    .swiper {
+        width: 65%;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        top: 55%;
+    }
+
+    .swiper-pagination {
+        margin: 1em 0;
+    }
+
+    .card {
+        width: 60%;
+        margin-left: 3rem;
+    }
+
+    .descrição__título {
+        font-size: 2rem;
+    }
+
+   
+
+}
